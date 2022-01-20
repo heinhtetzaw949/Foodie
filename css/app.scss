@@ -1,0 +1,44 @@
+$font-family-sans-serif: 'Montserrat', sans-serif;
+$primary: #55b455;
+$nav-link-padding-x:1.5rem;
+$nav-link-font-weight:bold;
+
+
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+@import "../node_modules/venobox/dist/venobox.min.css";
+@import "../node_modules/slick-carousel/slick/slick.css";
+@import "../node_modules/slick-carousel/slick/slick-theme.css";
+
+
+.site-header{
+  z-index: 1005;
+  background-color: #fffffff2  !important;
+  backdrop-filter: saturate(180%) blur(20px);
+}
+
+.scroll-to-top{
+  bottom: 50px;
+  right: 50px;
+
+}
+
+//.site-header .nav-link.active{
+//  background-color: var(--bs-primary);
+//  color: white;
+//  border-radius: 0.25rem;
+//}
+
+.gallery{
+    columns: 150px 3;
+}
+
+.gallery img{
+  width: 100%;
+  margin-bottom: 1rem;
+  border-radius: 0.5rem;
+}
+
+.slick-prev::before,.slick-next::before{
+  color: green;
+}
